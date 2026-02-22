@@ -370,6 +370,9 @@ const PORTFOLIO = {
   const locationSpan = document.querySelector(".contact-card span");
   if (locationSpan) locationSpan.textContent = P.location;
 
+  // Add fade-in class to contact cards
+  document.querySelectorAll(".contact-card").forEach((el) => el.classList.add("fade-in"));
+
   const contactSocials = document.querySelector(".contact-socials");
   if (contactSocials) contactSocials.innerHTML = buildSocials();
 
