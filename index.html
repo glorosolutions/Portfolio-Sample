@@ -53,8 +53,8 @@
       rel="canonical"
       href="https://portfolio-sample-glorosolutions.vercel.app"
     />
-    <link rel="icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -95,7 +95,9 @@
         <p class="hero-desc"></p>
         <div class="hero-btns">
           <a href="projects.html" class="btn btn-primary">View My Work</a>
-          <a href="#" class="btn btn-outline" download>Download CV</a>
+          <a href="assets/docs/resume.pdf" class="btn btn-outline" download
+            >Download CV</a
+          >
         </div>
         <div class="hero-socials">
           <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
@@ -294,8 +296,9 @@
         </div>
         <div class="footer-bottom">
           <p class="footer-credit">
-            &copy; 2026 <a href="#" target="_blank" rel="noopener"></a>. All
-            rights reserved.
+            &copy; <span class="footer-year"></span>
+            <a href="#" target="_blank" rel="noopener"></a>. All rights
+            reserved.
           </p>
           <div class="footer-socials"></div>
         </div>
@@ -307,7 +310,7 @@
       <i class="bx bx-chevron-up"></i>
     </a>
 
-    <script src="data.js"></script>
+    <script src="assets/js/data.js"></script>
     <script>
       // Mobile hamburger
       const hamburger = document.getElementById("hamburger");

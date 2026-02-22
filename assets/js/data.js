@@ -14,10 +14,12 @@ const PORTFOLIO = {
   email:        "hello@glorosolutions.com",
   phone:        "+91 98765 43210",
   availability: "Open to Work",
-  resumeFile:   "resume.pdf",
-  heroImage:    "img/main.png",
+  resumeFile:   "assets/docs/resume.pdf",
+  heroImage:    "assets/img/main.png",
   websiteUrl:   "https://glorosolutions.com",
   siteBaseUrl:  "https://portfolio-sample-glorosolutions.vercel.app",
+  copyrightYear: "2026",
+  copyrightName: "Gloro Solutions",
 
   // ── HERO SECTION ──────────────────────────────────────────
   heroGreeting: "Hello, I'm",
@@ -76,7 +78,7 @@ const PORTFOLIO = {
       title:       "Webinar Landing Page",
       desc:        "A modern, responsive landing page designed for online webinar registrations with smooth animations.",
       tags:        ["HTML", "CSS", "JavaScript"],
-      image:       "img/webinar.jpg",
+      image:       "assets/img/webinar.jpg",
       liveUrl:     "#",
       githubUrl:   "#",
     },
@@ -84,7 +86,7 @@ const PORTFOLIO = {
       title:           "Social Media Dashboard",
       desc:            "A responsive dashboard that displays real-time social media analytics with clean data visualizations.",
       tags:            ["React", "CSS", "API"],
-      image:           "img/dashboard.jpg",
+      image:           "assets/img/dashboard.jpg",
       placeholderIcon: "bx bx-mobile-alt",
       liveUrl:         "#",
       githubUrl:       "#",
@@ -93,7 +95,7 @@ const PORTFOLIO = {
       title:           "E-Commerce UI",
       desc:            "A clean e-commerce product listing page with filter functionality and cart management.",
       tags:            ["HTML", "Bootstrap", "JS"],
-      image:           "img/ecommerce.jpg",
+      image:           "assets/img/ecommerce.jpg",
       placeholderIcon: "bx bx-cart",
       liveUrl:         "#",
       githubUrl:       "#",
@@ -207,8 +209,11 @@ const PORTFOLIO = {
   const creditLink = document.querySelector(".footer-credit a");
   if (creditLink) {
     creditLink.href = P.websiteUrl;
-    creditLink.textContent = P.websiteUrl.replace("https://", "");
+    creditLink.textContent = P.copyrightName;
   }
+
+  // ── Footer Copyright Year ─────────────────────────────────
+  set(".footer-year", P.copyrightYear);
 
   // ── Footer social links ───────────────────────────────────
   const footerSocials = document.querySelector(".footer-socials");
