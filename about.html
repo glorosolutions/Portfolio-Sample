@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Gloro Solutions</title>
+    <meta
+      name="description"
+      content="Learn more about Gloro Solutions, a passionate Frontend Developer."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar scrolled" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Gloro<span>Solutions</span></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section page-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a passionate <strong>Frontend Developer</strong> focused on
+              creating elegant, performant web applications. I love turning
+              complex problems into simple, beautiful, and intuitive designs.
+            </p>
+            <p>
+              With a strong foundation in HTML, CSS, and JavaScript, I
+              specialize in building responsive interfaces that work seamlessly
+              across all devices. I'm always eager to learn new technologies and
+              keep up with the latest web trends.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Projects Done</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+            <a href="resume.pdf" class="btn btn-primary" download
+              >Download Resume</a
+            >
+          </div>
+          <div class="about-info">
+            <div class="info-card">
+              <div class="info-item">
+                <span class="info-label">Name</span>
+                <span class="info-value">Gloro Solutions</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Role</span>
+                <span class="info-value">Frontend Developer</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-value">hello@glorosolutions.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Availability</span>
+                <span class="info-value available">Open to Work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo">Gloro<span>Solutions</span></a>
+            <p>
+              Building clean, fast, and beautiful web experiences. Let's create
+              something amazing together.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p><i class="bx bx-envelope"></i> hello@glorosolutions.com</p>
+            <p><i class="bx bx-phone"></i> +91 98765 43210</p>
+            <p><i class="bx bx-map"></i> India</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-credit">
+            &copy; 2026
+            <a href="https://glorosolutions.com" target="_blank" rel="noopener"
+              >GloroSolutions.com</a
+            >. All rights reserved.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#about"
+      class="back-to-top"
+      id="backToTop"
+      aria-label="Back to top"
+    >
+      <i class="bx bx-chevron-up"></i>
+    </a>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        navLinks.classList.toggle("open");
+      });
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("open");
+          navLinks.classList.remove("open");
+        });
+      });
+
+      const backBtn = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        backBtn.classList.toggle("visible", window.scrollY > 200);
+      });
+
+      // Fade-in on load
+      const fadeObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".about-text, .about-info").forEach((el) => {
+        el.classList.add("fade-in");
+        fadeObserver.observe(el);
+      });
+    </script>
+  </body>
+</html>
