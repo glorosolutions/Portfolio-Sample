@@ -6,8 +6,8 @@
 const PORTFOLIO = {
 
   // ── PERSONAL INFO ─────────────────────────────────────────
-  name:         "Gloro Solutions",
-  firstName:    "Gloro",          // Used in the logo (part 1)
+  name:         "Gloro Solutions",          // Used in the page title and meta description
+  firstName:    "Gloro ",          // Used in the logo (part 1)
   lastName:     "Solutions",      // Used in the logo (part 2)
   role:         "Frontend Developer",
   location:     "India",
@@ -76,7 +76,7 @@ const PORTFOLIO = {
       title:       "Webinar Landing Page",
       desc:        "A modern, responsive landing page designed for online webinar registrations with smooth animations.",
       tags:        ["HTML", "CSS", "JavaScript"],
-      image:       "img/Web 1920 – 2.png",
+      image:       "img/webinar.jpg",
       liveUrl:     "#",
       githubUrl:   "#",
     },
@@ -84,7 +84,7 @@ const PORTFOLIO = {
       title:           "Social Media Dashboard",
       desc:            "A responsive dashboard that displays real-time social media analytics with clean data visualizations.",
       tags:            ["React", "CSS", "API"],
-      image:           null,
+      image:           "img/dashboard.jpg",
       placeholderIcon: "bx bx-mobile-alt",
       liveUrl:         "#",
       githubUrl:       "#",
@@ -93,7 +93,7 @@ const PORTFOLIO = {
       title:           "E-Commerce UI",
       desc:            "A clean e-commerce product listing page with filter functionality and cart management.",
       tags:            ["HTML", "Bootstrap", "JS"],
-      image:           null,
+      image:           "img/ecommerce.jpg",
       placeholderIcon: "bx bx-cart",
       liveUrl:         "#",
       githubUrl:       "#",
